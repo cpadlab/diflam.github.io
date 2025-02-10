@@ -1,1 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import "tailwindcss";
+
+@theme {
+
+    --color-island-spice-50: #fef9ea;
+    --color-island-spice-100: #fcefc9;
+    --color-island-spice-200: #f8de8f;
+    --color-island-spice-300: #f4c755;
+    --color-island-spice-400: #f1b12e;
+    --color-island-spice-500: #ea9016;
+    --color-island-spice-600: #cf6c10;
+    --color-island-spice-700: #ac4c11;
+    --color-island-spice-800: #8c3b14;
+    --color-island-spice-900: #733114;
+    --color-island-spice-950: #421806;
+
+    --font-inter: "Inter", serif;
+
+}
+
+
+@layer utilities {
+    
+    .custom-touch-action {touch-action: pan-x pinch-zoom;}
+    .moving-texts-animation div {animation: moving 30s linear 0s infinite forwards;}
+    .moving-texts-animation::-webkit-scrollbar {display: none;}
+
+}
+
+@keyframes moving {
+    from {transform: translateX(0%);} 
+    to {transform: translateX(-100%);}
+}
